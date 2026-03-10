@@ -1,0 +1,173 @@
+name: snowflake_pbt_test
+description: ''
+version: 0.0.1
+author: somani.raghav@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2026-03-10 10:41:30'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/m1:
+    name: m1
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: SERIES_REFERENCE
+        dataType:
+          type: String
+      - name: PERIOD
+        dataType:
+          type: Float
+      - name: DATA_VALUE
+        dataType:
+          type: Number
+      - name: SUPPRESSED
+        dataType:
+          type: String
+      - name: STATUS
+        dataType:
+          type: String
+      - name: UNITS
+        dataType:
+          type: String
+      - name: MAGNITUDE
+        dataType:
+          type: Number
+      - name: SUBJECT
+        dataType:
+          type: String
+      - name: Group
+        dataType:
+          type: String
+      - name: SERIES_TITLE_1
+        dataType:
+          type: String
+      - name: SERIES_TITLE_2
+        dataType:
+          type: String
+      - name: SERIES_TITLE_3
+        dataType:
+          type: String
+      - name: SERIES_TITLE_4
+        dataType:
+          type: String
+      - name: SERIES_TITLE_5
+        dataType:
+          type: String
+    description: null
+    author: somani.raghav@prophecy.io
+    files:
+    - models/m1.sql
+    - .prophecy/ide/models/m1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2026-03-10 10:41:58'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: somani.raghav@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2026-03-10 10:41:43'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/s1:
+    name: s1
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: Series_reference
+        dataType:
+          type: String
+      - name: Period
+        dataType:
+          type: Float
+      - name: Data_value
+        dataType:
+          type: Number
+      - name: Suppressed
+        dataType:
+          type: String
+      - name: STATUS
+        dataType:
+          type: String
+      - name: UNITS
+        dataType:
+          type: String
+      - name: Magnitude
+        dataType:
+          type: Number
+      - name: Subject
+        dataType:
+          type: String
+      - name: Group
+        dataType:
+          type: String
+      - name: Series_title_1
+        dataType:
+          type: String
+      - name: Series_title_2
+        dataType:
+          type: String
+      - name: Series_title_3
+        dataType:
+          type: String
+      - name: Series_title_4
+        dataType:
+          type: String
+      - name: Series_title_5
+        dataType:
+          type: String
+    description: null
+    author: somani.raghav@prophecy.io
+    files:
+    - seeds/s1.csv
+    createdAt: '2026-03-10 10:42:18'
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: somani.raghav@prophecy.io
+  createdAt: '2026-03-10 10:41:30'
+dependencies: []
+projectDependencies:
+  '44':
+    projectUID: 44
+    projectName: prophecy_basics
+    repositoryPath: gitUri=https://github.com/prophecy-io/prophecy-basics&subPath=
+    version: 1.0.8.dev5
+    isDefault: true
+    author: null
+    createdAt: '2026-03-10 10:41:29'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
+projectConfigurations: {}
