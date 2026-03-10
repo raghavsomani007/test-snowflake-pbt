@@ -44,7 +44,7 @@ sqlModels:
           type: String
       - name: STATUS
         dataType:
-          type: String
+          type: Boolean
       - name: UNITS
         dataType:
           type: String
@@ -117,7 +117,7 @@ sqlSeeds:
           type: String
       - name: STATUS
         dataType:
-          type: String
+          type: Boolean
       - name: UNITS
         dataType:
           type: String
